@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS Links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Discount Price</title>
+  </head>
+  <body class="bg-slate-400">
+    <header>
+      <h1 class="text-7xl text-black text-center mt-10 font-bold uppercase">
+        Discount Price
+      </h1>
+    </header>
+    <main>
+      <section
+        class="bg-green-600 text-white py-12 w-1/2 mx-auto text-center mt-10 rounded-lg"
+      >
+        <label class="text-3xl" for="original-price">Original Price: $</label>
+        <input
+          class="text-black py-1 px-2 rounded-lg"
+          type="number"
+          id="original-price"
+          required
+        /><br />
+        <label class="text-3xl" for="original-price">Discount Percentage: %</label>
+        <input
+          class="text-black py-1 px-2 rounded-lg"
+          type="number"
+          id="discount-price"
+          required
+        /><br />
+        <button
+          id="btn-apply"
+          class="dark:md:hover:bg-fuchsia-600 my-4 bg-red-400 py-3 px-10 text-2xl rounded-lg"
+        >
+          Apply
+        </button>
+        <h1 class="text-2xl">
+          Please Pay: $<span id="discount-price-display" >00</span>
+        </h1>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
